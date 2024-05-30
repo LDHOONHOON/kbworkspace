@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fixed로 고정된 바 만들기</title>
+    <style>
+      .container {
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+      .top_bar {
+        background: red;
+        /* fixed를 넣어주면 해당 위치에 뷰포트 기준으로 고정 */
+        position: fixed;
+
+        left: 0;
+        /* top에 붙이겠다 */
+        top: 0;
+        /* left,right를 둘다 0으로 주면 양쪽으로 꽉 채우겠다는 뜻 */
+        right: 0;
+        height: 50px;
+      }
+      .left_bar {
+        width: 50px;
+        background: blue;
+        position: fixed;
+        /* 왼쪽에 여백을 주겠다는 뜻 */
+        left: 0;
+        top: 50px;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top_bar"></div>
+    <div class="left_bar"></div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sitamet , consectetur adipiscing elit . … Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Fugit maiores aliquid
+        veritatis ratione, deserunt provident perspiciatis eaque praesentium
+        quos est, quaerat qui ad temporibus possimus inventore quidem laborum
+        placeat rem.Mauris non lobortis lectus . V…. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Dignissimos veritatis similique dolor amet
+        aspernatur, non deleniti officia, neque dolore velit saepe dolorem,
+        aperiam sequi ut. Velit blanditiis nostrum atque quae?
+      </p>
+      <p>
+        Proinut quam feugiat , tincidunt dolor nec , iaculis dui. …. Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Nihil sit molestiae
+        voluptates id totam non doloremque quaerat quidem! Rem alias atque
+        praesentium labore necessitatibus eligendi ab saepe delectus architecto
+        nesciunt.Mauris non lobortis lectus . V…. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Dignissimos veritatis similique dolor amet
+        aspernatur, non deleniti officia, neque dolore velit saepe dolorem,
+        aperiam sequi ut. Velit blanditiis nostrum atque quae?
+      </p>
+      <p>
+        Fusce elementum pretium diam vitae facilisis . …. Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Eius, labore ratione voluptatum sunt
+        sapiente, autem quidem iure cupiditate nobis vitae praesentium cumque,
+        perferendis beatae pariatur. Ex praesentium dicta expedita
+        exercitationem.Mauris non lobortis lectus . V…. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Dignissimos veritatis similique dolor
+        amet aspernatur, non deleniti officia, neque dolore velit saepe dolorem,
+        aperiam sequi ut. Velit blanditiis nostrum atque quae?
+      </p>
+      <p>
+        Mauris non lobortis lectus . V…. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Dignissimos veritatis similique dolor amet aspernatur,
+        non deleniti officia, neque dolore velit saepe dolorem, aperiam sequi
+        ut. Velit blanditiis nostrum atque quae?Mauris non lobortis lectus . V….
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        veritatis similique dolor amet aspernatur, non deleniti officia, neque
+        dolore velit saepe dolorem, aperiam sequi ut. Velit blanditiis nostrum
+        atque quae?
+      </p>
+    </div>
+  </body>
+</html>

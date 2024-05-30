@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>{{message}}</h2>
+    </div>
+    <!-- CDN 방식으로 뷰 가져오기 -->
+    <script src="http://unpkg.com/vue"></script>
+    <script>
+      let model = { message: 'Hello Vue3!' };
+      let vm = Vue.creatApp({
+        // createApp : Vue에서 앱을 생성할 때 사용되는 메소드
+        // 설정객체
+        name: 'APP',
+        // data는 Proxy 객체
+        data() {
+          return model;
+        },
+      }).mount('#app'); //   id가 app인 요소와 연결해줌
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br id="app">
+        x : <input type="text" vmodel.number ="x"><br />
+        y : <input type="text" vmodel.number ="x"><br />
+        덧셈 결과 : {{sum}}
+    </div>
+
+    <script type="text/javascript " src ="https://unpkg. vue "></script>
+    <script type="text/javascript>
+        var vm = Vue.createApp({
+            name: 'App';
+            data() {
+                return { x: 0, y: 0, sum: 0};
+            },
+            
+        }).mount('app');
+    </script>
+</body>
+</html>

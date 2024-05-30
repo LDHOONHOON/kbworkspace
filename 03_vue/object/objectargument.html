@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let human = {
+        name: '김상형',
+        age: 29,
+      };
+
+      function changeName(h) {
+        h.name = '김태희';
+      }
+      changeName(human);
+
+      document.write(
+        'name = ' + human.name + '<br>'
+      );
+      document.write(
+        'age = ' + human.age + '<br>'
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>flex-direction</title>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        /* flex-direction: flex의 방향을 설정; */
+        width: 250px;
+        height: 200px;
+        display: flex;
+        /* flex-flow: flex-direction + flex-wrap; */
+        /* nowrap이 기본값 */
+        flex-wrap: wrap;
+        background-color: DodgerBlue;
+      }
+      .flex-item > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flel-item">1</div>
+      <2 class="flel-item">2</div>
+      <div class="flel-item">3</div>
+      <div class="flel-item">4</div>
+    </div>
+  </body>
+</html>
