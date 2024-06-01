@@ -1,47 +1,73 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="header">
+    <h1 class="headerText">태평양 전쟁의 해전</h1>
+    <nav>
+      <ul class="nav nav-tabs nav-fill">
+        <li
+          v-for="tab in tabs"
+          :key="tab.id"
+          class="nav-item"
+        >
+          <!-- 탭의 아이디가 현재탭과 같으면 active 클래스를 추가해줌 -->
+          <a
+            style="cursor: pointer"
+            class="nav-link"
+            :class="{
+              active: tab.id === currentTab,
+            }"
+            @click="changeTab(tab.id)"
+            >{{ tab.label }}</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <!-- 정적 컴포넌트인 경우 include에 포함시키면 한번만 캐싱해서 가져온다 -->
+    <!-- 기본값으로 항상 다시 생성한다 -->
+    <!-- 동적 컴포넌트로 보여줄 데이터를 is에 넣는다 -->
+    <keep-alive include="MidwayTab,CoralSeaTab">
+      <component :is="currentTab"></component>
+    </keep-alive>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script>
+import CoralSeaTab from './components/CoralSeaTab.vue';
+import LeyteGulfTab from './components/LeyteGulfTab.vue';
+import MidwayTab from './components/MidwayTab.vue';
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+export default {
+  name: 'App',
+  components: {
+    CoralSeaTab,
+    LeyteGulfTab,
+    MidwayTab,
+  },
+  data() {
+    return {
+      currentTab: 'CoralSeaTab',
+      tabs: [
+        {
+          id: 'CoralSeaTab',
+          label: '산호해 해전',
+        },
+        {
+          id: 'MidwayTab',
+          label: '미드웨이 해전',
+        },
+        {
+          id: 'LeyteGulfTab',
+          label: '레이테만 해전',
+        },
+      ],
+    };
+  },
+  methods: {
+    changeTab(tab) {
+      // 선택된 탭을 업데이트
+      this.currentTab = tab;
+    },
+  },
+};
+</script>

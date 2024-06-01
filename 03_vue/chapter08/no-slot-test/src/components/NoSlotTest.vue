@@ -11,7 +11,13 @@
       :key="item.id"
       :id="item.id"
       :label="item.label"
-      @check-changed="CheckBoxChanged"
+      :checked="item.checked"
+      @change="
+        $emit('check-changed', {
+          id,
+          checked: $event.target.checked,
+        })
+      "
     ></CheckBox1>
   </div>
 </template>
