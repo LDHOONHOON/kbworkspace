@@ -31,7 +31,7 @@ const router = createRouter({
       component: AddTodo,
     },
     {
-      path: '/todos/edit/id',
+      path: '/todos/edit/:id',
       component: EditTodo,
     },
     {

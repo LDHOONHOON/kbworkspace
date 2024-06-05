@@ -55,26 +55,28 @@
 <script setup>
 import { inject, reactive } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
+
 const todoList = inject('todoList');
 const { updateTodo } = inject('actions');
 const router = useRouter();
 const currentRoute = useRoute();
+
 const matchedTodoItem = todoList.value.find(
-  (item) =>
-    item.id === parseInt(currentRoute.params.id)
+  (item) => item.id === currentRoute.params.id
 );
-// 업데이트할 대상을 찾지 못했을 경우 전체 목록 페이지로 돌아감
 if (!matchedTodoItem) {
   router.push('/todos');
 }
 const todoItem = reactive({ ...matchedTodoItem });
+
 const updateTodoHandler = () => {
   let { todo } = todoItem;
   if (!todo || todo.trim() === '') {
     alert('할일은 반드시 입력해야 합니다');
     return;
   }
-  updateTodo({ ...todoItem });
-  router.push('/todos');
+  updateTodo({ ...todoItem }, () => {
+    router.push('/todos');
+  });
 };
 </script>
