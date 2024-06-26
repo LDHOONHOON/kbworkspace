@@ -1,13 +1,13 @@
 package ch05.sec04;
 
-public class GarbageObjectExample {
+public class NullPointerExceptionExample {
     public static void main(String[] args) {
-        String hobby = "여행";
-        hobby = null;
+            int[] intArray = null;
+        //null인 배열이 0번째 값을 할당했긴 때문에 NullPointerException발생
+        //intArray[0] = 10;
 
-        String kind1 = "자동차";
-        String kind2 = kind1; // kind1 변수에 저장되어 있는 번지를 kind2 변수에 대입
-        kind1 = null; // "자동차"에 해당하는 String 객체는 쓰레기가 아님
-        System.out.println("kind2: " + kind2);
+            String str = null;
+            //null로 초기화된 문자열의 길이가 출력했기 때문에 NullPointerException발생
+            System.out.println("총 문자 수: " + str.length() );
     }
 }
