@@ -1,4 +1,4 @@
-package ch14.sec03.exam02;
+package ch14.sec02.exam02;
 
 import java.awt.Toolkit;
 

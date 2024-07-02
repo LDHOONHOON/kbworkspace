@@ -2,24 +2,17 @@ import java.util.Scanner;
 
 public class App {
     //    여러 메소드에서 사용할 변수는 위로 정리해줌
-    boolean run = true;
+    Scanner scanner = new Scanner(System.in);
     int studentNum = 0;
     int[] scores = null;
 
-    Scanner scanner = new Scanner(System.in);
+    Menu menu;
 
-    //    printMenu : 메뉴 출력하는 메소드
-    public void printMenu(){
-        System.out.println("-------------------------------------------------------");
-        System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
-        System.out.println("-------------------------------------------------------");
+    public App() {
+        // 생성자에서 Menu로 객체 생성해서 초기화
+        menu = new Menu();
     }
 
-    //    getSelect : 사용자가 입력한 메뉴번호 리턴
-    public int getSelect(){
-        System.out.print("선택> ");
-        return Integer.parseInt(scanner.nextLine());
-    }
 
     //    analize : 4번 메뉴인 분석 기능 처리하는 메소드
     public void analize(){
@@ -57,11 +50,6 @@ public class App {
         }
     }
 
-    //    exit : 5번 메뉴인 종료 기능 처리하는 메소드
-    public void exit(){
-        run = false;
-    }
-
     //    executeCommand : 만들어둔 메소드들을 사용자의 입력값에 따라 호출
     public void executeCommand(int selectNo){
         if(selectNo == 1){
@@ -72,17 +60,19 @@ public class App {
             printScore();
         }else if(selectNo == 4){
             analize();
-        } else if (selectNo==5) {
-            exit();
         }
     }
 
     public void run(){
-        while (run){
-            printMenu();
+        while (true){
+            menu.printMenu();
 //            getSelect는 int를 반환하는 메소드기 때문에 바로 받아와서 처리
-            int selectNo = getSelect();
+            int selectNo = menu.getSelect();
             executeCommand(selectNo);
+//            사용자가 입력한 값이 5일 때 while문을 종료시킴
+            if (selectNo==5) {
+                break;
+            }
         }
         System.out.println("프로그램 종료");
     }
