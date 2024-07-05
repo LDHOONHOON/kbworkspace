@@ -9,7 +9,7 @@ public class WriteExample {
     public static void main(String[] args) {
         try {
             OutputStream os =
-                    new FileOutputStream("/Users/kbworkspace/04_JAVA/study/src/test1.db");
+                    new FileOutputStream("/Users/ldh/kbworkspace/kbworkspace/test1.db");
             byte a = 10;
             byte b = 20;
             byte c = 30;
