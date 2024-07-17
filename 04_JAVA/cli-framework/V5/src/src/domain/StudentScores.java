@@ -1,4 +1,4 @@
-package domain;
+package src.domain;
 
 public class StudentScores {
     int studentNum = 0;
