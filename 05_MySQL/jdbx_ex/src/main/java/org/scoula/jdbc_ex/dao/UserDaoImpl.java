@@ -25,12 +25,12 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public int create(UserVO user) throws SQLException {
-        try (PreparedStatement stmt = conn.prepareStatement(USER_INSERT)) {
-            stmt.setString(1, user.getId());
-            stmt.setString(2, user.getPassword());
-            stmt.setString(3, user.getName());
-            stmt.setString(4, user.getRole());
-            return stmt.executeUpdate();
+        try (PreparedStatement pstmt = conn.prepareStatement(USER_INSERT)) {
+            pstmt.setString(1, user.getId());
+            pstmt.setString(2, user.getPassword());
+            pstmt.setString(3, user.getName());
+            pstmt.setString(4, user.getRole());
+            return pstmt.executeUpdate();
         }
     }
 
@@ -47,8 +47,9 @@ public class UserDaoImpl implements UserDao{
     public List<UserVO> getList() throws SQLException{
         List<UserVO> userList = new ArrayList<UserVO>();
         Connection conn = JDBCUtil.getConnection();
-        try (PreparedStatement stmt = conn.prepareStatement(USER_LIST);
-             ResultSet rs = stmt.executeQuery()) {
+        try (PreparedStatement pstmt = conn.prepareStatement(USER_LIST);
+             ResultSet rs =
+                     pstmt.executeQuery()) {
 //            next()를 사용해서 ResultSet의 마지막 행까지 데이터를 가져온다
             while(rs.next()) {
 //                결과값으로 받아온 ResultSet의 마지막 행까지 데이터를 가져온다
@@ -62,9 +63,9 @@ public class UserDaoImpl implements UserDao{
     // 회원 정보 조회
     @Override
     public Optional<UserVO> get(String id) throws SQLException {
-        try (PreparedStatement stmt = conn.prepareStatement(USER_GET)) {
-            stmt.setString(1, id);
-            try (ResultSet rs = stmt.executeQuery()) {
+        try (PreparedStatement pstmt = conn.prepareStatement(USER_GET)) {
+            pstmt.setString(1, id);
+            try (ResultSet rs = pstmt.executeQuery()) {
                 if (rs.next()) {
                     return Optional.of(map(rs));
                 }
@@ -76,20 +77,20 @@ public class UserDaoImpl implements UserDao{
     @Override
     public int update(UserVO user) throws SQLException{
         Connection conn = JDBCUtil.getConnection();
-        try ( PreparedStatement stmt = conn.prepareStatement(USER_UPDATE)) {
-            stmt.setString(1, user.getName());
-            stmt.setString(2, user.getRole());
-            stmt.setString(3, user.getId());
-            return stmt.executeUpdate();
+        try ( PreparedStatement pstmt = conn.prepareStatement(USER_UPDATE)) {
+            pstmt.setString(1, user.getName());
+            pstmt.setString(2, user.getRole());
+            pstmt.setString(3, user.getId());
+            return pstmt.executeUpdate();
         }
     }
     // USERS 테이블 관련 CRUD 메소드
 // 회원 삭제
     @Override
     public int delete(String id) throws SQLException{
-        try(PreparedStatement stmt = conn.prepareStatement(USER_DELETE)) {
-            stmt.setString(1, id);
-            return stmt.executeUpdate();
+        try(PreparedStatement pstmt = conn.prepareStatement(USER_DELETE)) {
+            pstmt.setString(1, id);
+            return pstmt.executeUpdate();
         }
     }
 }

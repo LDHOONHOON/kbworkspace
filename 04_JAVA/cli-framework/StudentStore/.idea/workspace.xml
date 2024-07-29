@@ -5,94 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ca9239a-cfec-4ef2-a517-0e5c8e6c385d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../00_Test/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../00_Test/.idea/00_Test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../00_Test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../00_Test/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../00_Test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../00_Test/J_Practice/ch05/IndexOfTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/artifacts/scoulacli_main_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/modules/scoulacli.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/modules/scoulacli.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/ScoulaLib.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/classes/java/main/org/scoula/lib/cil/command/Command.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/classes/java/main/org/scoula/lib/cil/command/ExitCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/classes/java/main/org/scoula/lib/cil/domain/StudentScores.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/classes/java/main/org/scoula/lib/cil/ui/Input.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/classes/java/main/org/scoula/lib/cil/ui/Menu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/classes/java/main/org/scoula/lib/cil/ui/MenuItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/classes/java/main/org/scoula/lib/cli/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/tmp/compileJava/compileTransaction/stash-dir/AnalizeCommand.class.uniqueId4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/tmp/compileJava/compileTransaction/stash-dir/App.class.uniqueId1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/tmp/compileJava/compileTransaction/stash-dir/GetScoresCommand.class.uniqueId0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/tmp/compileJava/compileTransaction/stash-dir/InitScoresCommand.class.uniqueId2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/tmp/compileJava/compileTransaction/stash-dir/Input.class.uniqueId3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/tmp/compileJava/compileTransaction/stash-dir/Menu.class.uniqueId6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/tmp/compileJava/compileTransaction/stash-dir/MyApp.class.uniqueId7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/build/tmp/compileJava/compileTransaction/stash-dir/PrintScoreCommand.class.uniqueId5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/src/main/java/org/scoula/lib/cil/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/src/main/java/org/scoula/lib/cil/command/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/src/main/java/org/scoula/lib/cil/domain/StudentScores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/src/main/java/org/scoula/lib/cil/ui/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/src/main/java/org/scoula/lib/cil/ui/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoulaLib/scoulacli/src/main/java/org/scoula/lib/cil/ui/MenuItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/V7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/MyApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/basic/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/command/AnalizeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/command/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/command/GetScoresCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/command/InitScoresCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/command/PrintScoreCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/domain/StudentScores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/ui/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../V7/src/ui/MenuItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../study/src/practice/indexoftest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../08_Spring/MemoApp/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../08_Spring/MemoApp/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../08_Spring/MemoApp/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../08_Spring/MemoApp/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../08_Spring/MemoApp/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../08_Spring/MemoApp/src/main/java/org/example/memo/MemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../00_Test/J_Practice/ArrayDequeExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../00_Test/out/production/00_Test/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../00_Test/out/production/00_Test/.idea/00_Test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../00_Test/out/production/00_Test/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../00_Test/out/production/00_Test/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../00_Test/out/production/00_Test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../00_Test/out/production/00_Test/J_Practice/ArrayDequeExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../00_Test/out/production/00_Test/J_Practice/ch05/IndexOfTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Algorithm/Algorithm_Test/src/week4/네트워크/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Algorithm/Algorithm_Test/src/week4/단어변환/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../qwer/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../qwer/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../qwer/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../qwer/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../04_JAVA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../study/src/ch05/sec04/NullPointerExceptionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../study/src/ch05/sec04/NullPointerExceptionExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../05_MySQL/jdbx_ex/src/main/java/org/scoula/jdbc_ex/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../05_MySQL/jdbx_ex/src/main/java/org/scoula/jdbc_ex/dao/UserDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,27 +72,91 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.StudentScoreApp.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build StudentStore.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.StudentStore [:StudentScoreApp.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.StudentStore [:StudentScoresApp.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.StudentStore [dependencies].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ldh/kbworkspace/kbworkspace/04_JAVA/cli-framework/StudentStore/src/main/java/org/scoula/lib/cil&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ldh/kbworkspace/kbworkspace/04_JAVA/cli-framework/StudentStore/src/main/java/org/scoula/lib/cli&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/scoula/lib/cli" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/scoula/lib/" />
       <recent name="$PROJECT_DIR$/src/main/java/org/scoula/lib/cil" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../ScoulaLib/scoulacli/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.scoula.lib.cli" />
+      <recent name="org.scoula.lib.cli.domain" />
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.org.scoula.lib.cli.StudentScoreApp">
+    <configuration name="StudentScoreApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="StudentScoreApp" />
+      <module name="StudentStore.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentScoresApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.java.org.scoula.lib.cil.StudentScoresApp" />
+      <module name="StudentStore.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.java.org.scoula.lib.cil.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.scoula.lib.cli.StudentScoreApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.scoula.lib.cli.StudentScoreApp" />
+      <module name="StudentStore.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.scoula.lib.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.scoula.lib.cli.StudentScoresApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.scoula.lib.cli.StudentScoresApp" />
+      <module name="StudentStore.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.scoula.lib.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentStore [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -185,6 +181,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.scoula.lib.cli.StudentScoreApp" />
+        <item itemvalue="Application.org.scoula.lib.cli.StudentScoresApp" />
+        <item itemvalue="Application.StudentScoresApp" />
+        <item itemvalue="Application.StudentScoreApp" />
         <item itemvalue="Gradle.StudentStore [dependencies]" />
       </list>
     </recent_temporary>
@@ -208,6 +208,9 @@
       <workItem from="1721269219463" duration="7412000" />
       <workItem from="1721282457890" duration="38000" />
       <workItem from="1721282503662" duration="271000" />
+      <workItem from="1721282798076" duration="8144000" />
+      <workItem from="1721468882642" duration="17000" />
+      <workItem from="1721534033318" duration="287000" />
     </task>
     <servers />
   </component>
@@ -216,5 +219,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/scoula/lib/cli/StudentScoreApp.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

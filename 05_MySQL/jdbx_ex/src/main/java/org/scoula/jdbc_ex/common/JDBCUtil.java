@@ -11,7 +11,7 @@ public class JDBCUtil {
     // 정적 초기화 블록을 사용해서 JDBC 드라이버를 로드하고 데이터베이스 연결 설정
     static {
         try {
-//            Properties 객체를 생성학 application.properties 파일 로드
+//            Properties 객체를 생성할 application.properties 파일 로드
             Properties properties = new Properties();
             properties.load(JDBCUtil.class.getResourceAsStream("/application.properties"));
 

@@ -11,7 +11,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/V4.test.iml" filepath="$PROJECT_DIR$/.idea/modules/V4.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/V5/V5.iml" filepath="$PROJECT_DIR$/V5/V5.iml" />
       <module fileurl="file://$PROJECT_DIR$/V6/V6.iml" filepath="$PROJECT_DIR$/V6/V6.iml" />
-      <module fileurl="file://$PROJECT_DIR$/V7/V7.iml" filepath="$PROJECT_DIR$/V7/V7.iml" />
       <module fileurl="file://$PROJECT_DIR$/cli-framework.iml" filepath="$PROJECT_DIR$/cli-framework.iml" />
     </modules>
   </component>

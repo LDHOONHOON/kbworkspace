@@ -1,5 +1,3 @@
 rootProject.name = 'TodoApp'
-
 include ':ScoulaCli'
 project(':ScoulaCli').projectDir=new File('/Users/ldh/kbworkspace/kbworkspace/04_JAVA/cli-framework/ScoulaLib/scoulacli')
-
