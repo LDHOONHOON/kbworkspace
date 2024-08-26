@@ -1,57 +1,61 @@
-package Algorithm_Test.src.week5.게임맵_최단거리;
-
 import java.util.*;
 
-class Solution {
+public class Solution {
+    int[] dX = {1, -1, 0, 0}; // dX 배열은 상하좌우로 이동할 때 x좌표의 변화량을 정의합니다.
+    int[] dY = {0, 0, 1, -1}; // dY 배열은 상하좌우로 이동할 때 y좌표의 변화량을 정의합니다.
+
+    // 문제를 해결하는 메인 메소드
     public int solution(int[][] maps) {
-        // 행과 열의 길이를 정의
-        int n = maps.length;           // 미로의 행 수
-        int m = maps[0].length;        // 미로의 열 수
+        int answer = 0; // 정답을 저장할 변수, 초기값은 0으로 설정합니다.
 
-        // 방문 여부를 기록할 배열
-        boolean[][] visited = new boolean[n][m];
+        // 방문 여부를 확인하는 2차원 배열을 생성합니다. maps와 동일한 크기로 초기화합니다.
+        int[][] visited = new int[maps.length][maps[0].length];
 
-        // BFS를 위한 큐 생성
-        Queue<int[]> queue = new ArrayDeque<>();
+        // BFS 알고리즘을 사용하여 최단 경로를 찾습니다.
+        bfs(maps, visited);
+        // 목적지에 도달했을 때의 값을 answer에 저장합니다.
+        answer = visited[maps.length - 1][maps[0].length - 1];
 
-        // 시작점을 큐에 추가 (위치 (0, 0)과 거리 1)
-        queue.add(new int[]{0, 0, 1});
-        visited[0][0] = true;  // 시작점을 방문 처리
+        // 만약 목적지에 도달할 수 없을 경우, answer가 0이므로 -1로 설정합니다.
+        if (answer == 0) {
+            answer = -1;
+        }
 
-        // 이동 가능한 네 방향 (상, 하, 좌, 우)
-        int[] dr = {0, 1, 0, -1};  // 행 이동 (우, 하, 좌, 상)
-        int[] dc = {-1, 0, 1, 0};  // 열 이동 (좌, 상, 우, 하)
+        return answer; // 결과를 반환합니다.
+    }
 
-        // BFS 탐색 시작
+    // BFS 알고리즘을 구현한 메소드
+    public void bfs(int[][] maps, int[][] visited) {
+        int x = 0; // 시작 지점의 x좌표 (0,0)으로 초기화합니다.
+        int y = 0; // 시작 지점의 y좌표 (0,0)으로 초기화합니다.
+        visited[x][y] = 1; // 시작 지점을 방문했다고 표시하며, 방문 횟수를 1로 설정합니다.
+
+        // 탐색을 위한 큐를 생성하고 시작 지점을 큐에 추가합니다.
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{x, y});
+
+        // 큐가 빌 때까지 BFS 탐색을 진행합니다.
         while (!queue.isEmpty()) {
-            // 큐에서 현재 위치와 거리를 꺼냄
-            int[] cur = queue.remove();
-            int r = cur[0];  // 현재 행
-            int c = cur[1];  // 현재 열
-            int dist = cur[2];  // 현재까지의 거리
+            int[] current = queue.poll(); // 큐에서 현재 위치를 꺼냅니다.
+            int cX = current[0]; // 현재 위치의 x좌표를 가져옵니다.
+            int cY = current[1]; // 현재 위치의 y좌표를 가져옵니다.
 
-            // 목적지에 도달했는지 확인
-            if (r == n - 1 && c == m - 1) {
-                return dist;  // 목적지에 도달하면 거리 반환
-            }
+            // 상하좌우 네 방향으로 이동을 시도합니다.
+            for (int i = 0; i < 4; i++) {
+                int nX = cX + dX[i]; // 새로운 x좌표를 계산합니다.
+                int nY = cY + dY[i]; // 새로운 y좌표를 계산합니다.
 
-            // 네 방향으로 이동
-            for (int d = 0; d < 4; d++) {
-                int nr = r + dr[d];  // 새로운 행 좌표
-                int nc = c + dc[d];  // 새로운 열 좌표
+                // 지도 범위를 벗어나는 경우는 무시합니다.
+                if (nX < 0 || nX > maps.length - 1 || nY < 0 || nY > maps[0].length - 1) {
+                    continue; // 다음 반복으로 넘어갑니다.
+                }
 
-                // 새로운 좌표가 유효한 범위 내에 있고, 이동 가능한 위치(값이 1)인지 확인
-                if (nr >= 0 && nr < n && nc >= 0 && nc < m && maps[nr][nc] == 1) {
-                    // 아직 방문하지 않은 위치라면
-                    if (!visited[nr][nc]) {
-                        visited[nr][nc] = true;  // 새로운 위치 방문 처리
-                        queue.add(new int[]{nr, nc, dist + 1});  // 큐에 새로운 위치와 거리 추가
-                    }
+                // 아직 방문하지 않았고, 이동할 수 있는 칸(값이 1인 경우 -> 벽x)이라면
+                if (visited[nX][nY] == 0 && maps[nX][nY] == 1) {
+                    visited[nX][nY] = visited[cX][cY] + 1; // 현재까지의 거리 + 1을 새로운 칸에 기록합니다.
+                    queue.add(new int[]{nX, nY}); // 큐에 새로운 위치를 추가합니다.
                 }
             }
         }
-
-        // 큐가 비어버렸지만 목적지에 도달하지 못한 경우 -1 반환
-        return -1;
     }
 }

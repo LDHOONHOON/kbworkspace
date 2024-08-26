@@ -1,2 +1,7 @@
-package org.scoula.ex01.config;public class RootConfig {
+package org.scoula.ex01.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class RootConfig {
 }

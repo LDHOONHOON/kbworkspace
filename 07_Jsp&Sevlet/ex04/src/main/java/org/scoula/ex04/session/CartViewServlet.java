@@ -1,4 +1,4 @@
-package org.scoula.ex04.cart;
+package org.scoula.ex04.session;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

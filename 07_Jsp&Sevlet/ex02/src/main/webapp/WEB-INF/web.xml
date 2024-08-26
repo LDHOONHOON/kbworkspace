@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>helloServlet</servlet-name>
-        <servlet-class>org.scoula.ex02.HelloServlet</servlet-class>
+        <servlet-class>org.dfassscoula.ex02.HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>helloServlet</servlet-name>

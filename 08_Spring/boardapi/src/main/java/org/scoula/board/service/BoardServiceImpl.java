@@ -12,12 +12,9 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.lang.invoke.MutableCallSite;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
-
-import static org.scoula.common.util.UploadFiles.upload;
 
 @Log4j
 @Service    // Service 역할을 하는 Bean 등록

@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="login" method="get">
+<form action="/jstl_ex" method="get">
     <fieldset>
         <legend>로그인 폼</legend>
         <ul>
