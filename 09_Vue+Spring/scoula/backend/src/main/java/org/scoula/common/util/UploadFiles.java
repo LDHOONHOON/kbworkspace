@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
 
@@ -15,7 +16,7 @@ public class UploadFiles {
         // 기본 디렉토리가 있는지 확인, 없으면 새로 생성
         File base = new File(baseDir);
 //        exists 메소드로 해당 경로가 존재하는지 체크
-        if(!base.exists()) {
+        if (!base.exists()) {
             base.mkdirs();  // mkdirs: 중간에 존재하지 않는 디렉토리까지 모두 생성
         }
 
@@ -27,7 +28,7 @@ public class UploadFiles {
     }
 
 
-//    파일 크기를 사람이 읽기 쉬운 형식으로 변환
+    //    파일 크기를 사람이 읽기 쉬운 형식으로 변환
 //     1,225,957 바이트 ->  "1.2 MB"
     public static String getFormatSize(Long size) {
         // 파일 크기가 0 이하일 경우 "0"을 반환
@@ -35,7 +36,7 @@ public class UploadFiles {
             return "0";
 
         // 파일 크기를 나타낼 단위를 정의 (Bytes, KB, MB, GB, TB)
-        final String[] units = new String[] { "Bytes", "KB", "MB", "GB", "TB" };
+        final String[] units = new String[]{"Bytes", "KB", "MB", "GB", "TB"};
 
         // 파일 크기가 어느 단위에 속하는지 계산 (예: KB, MB 등)
         int digitGroups = (int) (Math.log10(size) / Math.log10(1024));
@@ -59,11 +60,29 @@ public class UploadFiles {
         response.setHeader("Content-Disposition", "attachment; filename=\"" + filename + "\"");
 
 //        response의 형태를 알수 없기 때문에 OutputStream 사용
-        try(OutputStream os = response.getOutputStream();
-            BufferedOutputStream bos = new BufferedOutputStream(os)) {
+        try (OutputStream os = response.getOutputStream();
+             BufferedOutputStream bos = new BufferedOutputStream(os)) {
             // 원본 파일을 스트림으로 전송(복사)
-            Files.copy(Paths.get(file.getPath()),bos);
+            Files.copy(Paths.get(file.getPath()), bos);
         }
     }
 
+    // 이미지를 다운로드하는 메소드 (출력용)
+    public static void downloadImage(HttpServletResponse response, File file) {
+        try {
+            Path path = Path.of(file.getPath());
+            String mimeType = Files.probeContentType(path); // 파일의 MINE 타입 추출
+            response.setContentType(mimeType); // response 타입 설정
+            response.setContentLength((int) file.length()); // response 길이 설정
+
+//            파일을 클라이언트로 전송하기 위해 출력 스트림 사용
+            try (OutputStream os = response.getOutputStream();
+                 BufferedOutputStream bos = new BufferedOutputStream(os)) {
+                Files.copy(path, bos);
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+    }
 }

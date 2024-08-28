@@ -1,9 +1,15 @@
 <script setup>
-import { useRouter } from 'vue-router';
+import { useRouter } from "vue-router";
+import { useAuthStore } from "@/stores/auth";
+
+const store = useAuthStore();
+
 const router = useRouter();
 // 루트 경로로 이동 시켜주는 함수
 const logout = (e) => {
-  router.push('/');
+  // 로그아웃
+  store.logout();
+  router.push("/");
 };
 </script>
 <template>
