@@ -5,285 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4bf93ac-a143-4b0f-a2d3-11b62357063a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/Algorithm_Test/src/week3/소수찾기/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/Algorithm_Test/src/week3/후보키/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../04_JAVA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/.idea/template-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/auth.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/board/controller/BoardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/board/domain/BoardAttachmentVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/board/domain/BoardVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/board/dto/BoardDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/board/mapper/BoardMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/board/service/BoardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/board/service/BoardServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/common/util/UploadFileName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/common/util/UploadFiles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/controller/SecurityController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/exception/ApiExceptionAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/member/controller/MemberController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/member/dto/MemberDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/member/dto/MemberJoinDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/member/mapper/MemberMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/member/service/MemberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/member/service/MemberServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/account/domain/AuthVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/account/domain/CustomUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/account/domain/MemberVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/account/dto/AuthResultDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/account/dto/LoginDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/account/dto/UserInfoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/account/mapper/UserDetailsMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/config/SecurityInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/filter/AuthenticationErrorFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/filter/JwtAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/filter/JwtUsernamePasswordAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/handler/CustomAccessDeniedHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/handler/CustomAuthenticationEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/handler/LoginFailureHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/handler/LoginSuccessHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/service/CustomUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/util/JsonResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/java/org/scoula/security/util/JwtProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/resources/log4j.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/resources/log4jdbc.log4j2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/resources/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/resources/org/scoula/board/mapper/BoardMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/resources/org/scoula/mapper/MapperTemplate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/resources/org/scoula/security/account/mapper/UserDetailsMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/assets/BoardListPage-Bmd8Ip_J.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/assets/ChangePasswordPage-t068aQ2D.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/assets/GalleryListPage-Bgh4Q85n.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/assets/JoinPage-W9sset2N.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/assets/LoginPage-CUAULgJL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/assets/ProfilePage-Cwr8B3kq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/assets/TravelListPage-wvM3rDF9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/assets/bg-7Viz5avH.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/assets/index-CROJtZU4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/assets/index-Cbn4FEb8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/main/webapp/resources/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/test/java/org/scoula/config/RootConfigTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/test/java/org/scoula/persistence/JDBCTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/test/java/org/scoula/security/PasswordEncoderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/test/java/org/scoula/security/account/mapper/UserDetailsMapperTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/test/java/org/scoula/security/util/JwtProcessorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend 강사님/src/test/resources/log4j.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/.idea/template-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/auth.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/board/controller/BoardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/board/domain/BoardAttachmentVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/board/domain/BoardVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/board/dto/BoardDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/board/mapper/BoardMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/board/service/BoardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/board/service/BoardServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/common/util/UploadFileName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/common/util/UploadFiles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/controller/SecurityController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/exception/ApiExceptionAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/member/controller/MemberController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/member/dto/MemberDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/member/dto/MemberJoinDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/member/exception/PasswordMissmatchException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/member/mapper/MemberMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/member/service/MemberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/member/service/MemberServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/account/domain/AuthVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/account/domain/CustomUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/account/domain/MemberVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/account/dto/AuthResultDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/account/dto/LoginDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/account/dto/UserInfoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/account/mapper/UserDetailsMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/config/SecurityInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/filter/AuthenticationErrorFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/filter/JwtAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/filter/JwtUsernamePasswordAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/handler/CustomAccessDeniedHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/handler/CustomAuthenticationEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/handler/LoginFailureHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/handler/LoginSuccessHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/service/CustomUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/util/JsonResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/java/org/scoula/security/util/JwtProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/resources/log4j.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/resources/log4jdbc.log4j2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/resources/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/resources/org/scoula/board/mapper/BoardMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/resources/org/scoula/mapper/MapperTemplate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/resources/org/scoula/security/account/mapper/UserDetailsMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/assets/BoardListPage-CQr8CXJN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/assets/ChangePasswordPage-laqMoGli.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/assets/GalleryListPage-heI7uGmh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/assets/JoinPage-eM4z7Do6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/assets/LoginPage-CBbgrscr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/assets/ProfilePage-DtedJWpI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/assets/TravelListPage-bggRnaD9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/assets/bg1-nx89J8wP.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/assets/index-B2IgYOF5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/assets/index-nx3lDK6Q.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/main/webapp/resources/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/test/java/org/scoula/config/RootConfigTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/test/java/org/scoula/security/PasswordEncoderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/test/java/org/scoula/security/account/mapper/UserDetailsMapperTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/test/java/org/scoula/security/util/JwtProcessorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/backend/src/test/resources/log4j.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/api/authApi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/api/boardApi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/api/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/assets/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/assets/images/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/assets/images/bg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/assets/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/assets/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/components/layouts/DefaultLayout.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/components/layouts/Footer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/components/layouts/Header.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/components/layouts/NavBar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/components/layouts/menu/AccountMenuGroup.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/components/layouts/menu/AccountMenuItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/components/layouts/menu/LogoutMenuItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/components/layouts/menu/MenuGroup.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/components/layouts/menu/MenuItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/pages/HomePage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/pages/auth/ChangePasswordPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/pages/auth/JoinPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/pages/auth/LoginPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/pages/auth/ProfilePage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/pages/board/BoardListPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/pages/gallery/GalleryListPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/pages/travel/TravelListPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/router/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/router/board.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/router/gallery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/router/travel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /src/stores/counter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend /vite.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/assets/BoardListPage-BT-QYYjD.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/assets/ChangePasswordPage-DAPPcKNG.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/assets/GalleryListPage-mCBlhoko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/assets/JoinPage-CGXSvz0q.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/assets/LoginPage-Dn1vE7vU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/assets/ProfilePage-DoU--PWY.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/assets/TravelListPage-DQq_5b50.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/assets/bg-7Viz5avH.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/assets/index-BiUHlfPe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/assets/index-BzpEjtXq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/C:/KB_FullStack/09_Spring+Vue/scoula/backend/src/main/webapp/resources/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/api/authApi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/assets/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/assets/images/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/assets/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/assets/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/components/layouts/DefaultLayout.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/components/layouts/Footer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/components/layouts/Header.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/components/layouts/NavBar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/components/layouts/menu/AccountMenuGroup.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/components/layouts/menu/AccountMenuItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/components/layouts/menu/LogoutMenuItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/components/layouts/menu/MenuGroup.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/components/layouts/menu/MenuItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/pages/HomePage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/pages/auth/ChangePasswordPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/pages/auth/JoinPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/pages/auth/LoginPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/pages/auth/ProfilePage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/pages/board/BoardListPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/pages/gallery/GalleryListPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/pages/travel/TravelListPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/router/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/router/board.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/router/gallery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/router/travel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/src/stores/counter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/frontend 강사님/vite.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/common/util/UploadFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/common/util/UploadFiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/BoardListPage-CQr8CXJN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/ChangePasswordPage-laqMoGli.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/GalleryListPage-heI7uGmh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/JoinPage-eM4z7Do6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/LoginPage-CBbgrscr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/ProfilePage-DtedJWpI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/TravelListPage-bggRnaD9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/index-B2IgYOF5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/index-nx3lDK6Q.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/member/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/member/mapper/MemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/member/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/member/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/member/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/java/org/scoula/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/BoardListPage-DKXjjo4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/ChangePasswordPage-CEyN3AvU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/GalleryListPage-Bu6cRmwo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/JoinPage-DveX6gN-.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/LoginPage-B4iFTQua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/ProfilePage-AU_05IUR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/TravelListPage-CZuZLsyn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/assets/index-BtjvC4nq.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/backend/src/main/webapp/resources/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/frontend /src/components/layouts/menu/AccountMenuGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/frontend /src/components/layouts/menu/AccountMenuGroup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/frontend /src/pages/auth/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/frontend /src/pages/auth/LoginPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/frontend /src/api/authApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/frontend /src/api/authApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/frontend /src/pages/auth/ProfilePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/frontend /src/pages/auth/ProfilePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/frontend /src/stores/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_Vue+Spring/scoula/frontend /src/stores/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -501,6 +243,10 @@
       <workItem from="1724710009900" duration="624000" />
       <workItem from="1724725747886" duration="14000" />
       <workItem from="1724813282393" duration="1079000" />
+      <workItem from="1724834572568" duration="598000" />
+      <workItem from="1724838835913" duration="416000" />
+      <workItem from="1724853326751" duration="598000" />
+      <workItem from="1724889875368" duration="600000" />
     </task>
     <servers />
   </component>

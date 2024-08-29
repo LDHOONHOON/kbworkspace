@@ -36,7 +36,7 @@ public class BoardController {
 //    http://localhost:8080/api/board
 //    새 게시글 생성
     @PostMapping()
-    public ResponseEntity<BoardDTO> create(@RequestBody BoardDTO board){
+    public ResponseEntity<BoardDTO> create(BoardDTO board){
 //        객체를 json 데이터 형태로 보낼 때는 @RequestBody 사용
 //        POST 요청시 대부분 사용한다
         return ResponseEntity.ok(service.create(board));
@@ -45,7 +45,7 @@ public class BoardController {
 //    http://localhost:8080/api/board/14
 //    기존 게시글 수정
     @PutMapping("/{no}")
-    public ResponseEntity<BoardDTO> update(@PathVariable Long no, @RequestBody BoardDTO board){
+    public ResponseEntity<BoardDTO> update(@PathVariable Long no, BoardDTO board){
 //        no 번호의 게시글을 @RequestBody에 담아온 데이터로 수정
 //        mapper.xml 부분의 #{ } 내에 있는 필드 값은 꼭 @RequestBody 에 추가해줄것
 //        소문자로 시작하는 primitive 타입은 null 값이 들어가면 예외 발생하기 때문에

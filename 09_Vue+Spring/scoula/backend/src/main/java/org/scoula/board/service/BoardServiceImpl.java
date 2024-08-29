@@ -37,8 +37,9 @@ public class BoardServiceImpl implements BoardService{
     @Override
     public BoardDTO get(Long no) {
         log.info("get........." + no);
-
         BoardDTO board = BoardDTO.of(mapper.get(no));
+
+        log.info("========================" + board);
 //        board 객체가 null이면 NoSuchElementException 예외 발생, null이 아니면 해당 객체 반환
         return Optional.ofNullable(board)
                 .orElseThrow(NoSuchElementException::new);
@@ -52,17 +53,17 @@ public class BoardServiceImpl implements BoardService{
         log.info("create.........." + board);
 
 //        DTO를 VO로 변경해서 mapper의 메소드 호출
-        BoardVO vo = board.toVo();
-        mapper.create(vo);
+        BoardVO boardVO = board.toVo();
+        mapper.create(boardVO);
 
         // 파일 업로드 처리
         List<MultipartFile> files = board.getFiles();
         if(files != null && !files.isEmpty()) { // 첨부 파일이 있는 경우
-            upload(vo.getNo(), files);
+            upload(boardVO.getNo(), files);
         }
 
 //        VO의 no에 해당하는 DTO 찾아오기
-        return get(vo.getNo());
+        return get(boardVO.getNo());
     }
 
 //    해당 게시물에 참조 파일들을 추가해주는 메소드
@@ -98,9 +99,16 @@ public class BoardServiceImpl implements BoardService{
     @Override
     public BoardDTO update(BoardDTO board) {
         log.info("update.........." + board);
+        BoardVO boardVO = board.toVo();
+        log.info("update...... " + boardVO);
 
-//        mapper의 update를 호출해서 행 수정
-        mapper.update(board.toVo());
+        mapper.update(boardVO);
+
+        // 파일 업로드 처리
+        List<MultipartFile> files = board.getFiles();
+        if(files != null && !files.isEmpty()) {
+            upload(board.getNo(), files);
+        }
 //        바뀐 행을 가져와서 DTO로 반환
         return get(board.getNo());
     }
