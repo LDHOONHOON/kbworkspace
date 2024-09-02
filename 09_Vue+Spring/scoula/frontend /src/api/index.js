@@ -40,6 +40,7 @@ instance.interceptors.response.use(
   },
   async (error) => {
     // 에러 응답인 경우(401, 403, 305, 500 등)
+    // ?, => null이 아닌 경우에만 뒤에 값 참조
     if (error.response?.status === 401) {
       const { logout } = useAuthStore();
       logout();
