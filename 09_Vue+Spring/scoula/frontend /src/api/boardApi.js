@@ -48,6 +48,7 @@ export default {
     formData.append("writer", article.writer);
     formData.append("content", article.content);
 
+    // 파일이 존재하는 경우, 해당 파일의 길이만큼 돌면서 각 파일을 FormData에 추가
     if (article.files) {
       // 첨부파일이 있는 경우
       for (let i = 0; i < article.files.length; i++) {
