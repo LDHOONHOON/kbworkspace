@@ -16,12 +16,15 @@ export default [
     component: () => import("../pages/board/BoardDetailPage.vue"),
   },
   {
+    // 게시판 작성 페이지에 대한 라우트
     path: "/board/create",
     name: "board/create",
     component: () => import("../pages/board/BoardCreatePage.vue"),
+    // 라우트 접근 전에 인증 여부 확인
     beforeEnter: isAuthenticated,
   },
   {
+    // 게시판 수정 페이지에 대한 라우트
     path: "/board/update/:no",
     name: "board/update",
     component: () => import("../pages/board/BoardUpdatePage.vue"),

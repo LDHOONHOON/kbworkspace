@@ -13,7 +13,7 @@ const orgArticle = ref({});
 const files = ref(null);
 
 const back = () => {
-  router.push({ name: "board/detail", params: { no } });
+  router.push({ name: "board/detail", params: { no }, query: cr.query });
 };
 
 // 첨부파일 삭제
@@ -75,8 +75,10 @@ load();
       <div class="invalid-feedback">제목은 필수 요소입니다.</div>
     </div>
 
+    <!-- 기존 첨부파일 목록 -->
     <div class="mb-3 mt-3">
       <label class="form-label"> 기존 첨부파일 </label>
+      <!-- 첨부파일들을 돌면서 이름과 휴지통 아이콘 생성, 휴지통 클릭시 해당 첨부파일 삭제됨 -->
       <div v-for="file in attachments" :key="file.no" class="attach">
         <i class="fa-solid fa-paperclip"></i> {{ file.filename }}
         <i

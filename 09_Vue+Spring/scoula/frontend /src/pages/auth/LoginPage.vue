@@ -15,21 +15,21 @@ const member = reactive({
 
 const error = ref(""); // 에러 메시지 담을 객체
 
-// 제출버튼 비활성화 여부를  판단하느 ㄴ속성 (username과 password가 둘 다 입력되어있는지 체크)
+// 제출버튼 비활성화 여부를  판단하는 속성 (username과 password가 둘 다 입력되어있는지 체크)
 const disableSubmit = computed(() => !(member.username && member.password));
 
 const login = async () => {
   try {
     await auth.login(member);
     if (cr.query.next) {
-      // 로그인후 이동할 페이지가 있는 경우
+      // 로그인후 이동할 페이지 정보가 있는 경우 해당 페이지로 이동
       router.push({ name: cr.query.next });
     } else {
-      // 일반 로그인
+      // 이동 페이지 정보가 없는 경우엔 홈 화면으로 이동
       router.push("/");
     }
   } catch (e) {
-    error.value = e.response.data;
+    error.value = e.response.data; // 에러 메세지를 화면에 표시
   }
 };
 </script>
